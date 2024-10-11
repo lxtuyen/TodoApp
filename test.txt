@@ -1,0 +1,5 @@
+./myenv/Scripts/activate
+deactivate
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+docker-compose up -d
+docker buildx build --tag flaskapi:v1.0 .
